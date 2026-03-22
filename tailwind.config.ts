@@ -12,8 +12,17 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      heading: ['DM Serif Display', 'serif'],
+      body: ['DM Sans', 'sans-serif'],
+    },
     extend: {
       colors: {
+        navy: {
+          DEFAULT: "hsl(222, 60%, 18%)",
+          light: "hsl(222, 40%, 30%)",
+          dark: "hsl(222, 60%, 12%)",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
