@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { FileDown } from "lucide-react";
 
+const pitchDeckUrl = `${import.meta.env.BASE_URL}turnover-global-pitch-deck.pdf`;
+
 const PitchDeckSection = () => (
   <section id="pitch-deck" className="section-padding bg-primary text-primary-foreground">
     <div className="max-w-3xl mx-auto text-center">
@@ -19,7 +21,7 @@ const PitchDeckSection = () => (
         </p>
 
         <a
-          href="/turnover-global-pitch-deck.pdf"
+          href={pitchDeckUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 bg-accent text-accent-foreground px-8 py-4 rounded-lg font-medium hover:opacity-90 transition-opacity"
@@ -29,7 +31,7 @@ const PitchDeckSection = () => (
         </a>
 
         <p className="text-primary-foreground/40 text-sm mt-6">
-          Place your PDF as <code className="bg-primary-foreground/10 px-2 py-1 rounded text-xs">public/turnover-global-pitch-deck.pdf</code>
+          The deck is now hosted as a static file at <code className="bg-primary-foreground/10 px-2 py-1 rounded text-xs">public/turnover-global-pitch-deck.pdf</code>
         </p>
       </motion.div>
     </div>
