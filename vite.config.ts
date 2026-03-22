@@ -4,7 +4,8 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-base: mode === "production" ? "/fresh-turnover/" : "/",
+export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? "/fresh-turnover/" : "/",
   server: {
     host: "::",
     port: 8080,
